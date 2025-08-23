@@ -6,6 +6,8 @@ public class LinearSearch {
         int result = linearSearch(arr,find);
         System.out.println(result);
     }
+    // TC: O(n) - In the worst case, we have to scan the entire array.
+    // SC: O(1) - We are not using any extra space.
     static int linearSearch(int[] arr, int ele){
 
         for(int i = 0; i< arr.length; i++){
