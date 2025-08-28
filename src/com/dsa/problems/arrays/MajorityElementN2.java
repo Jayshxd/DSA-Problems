@@ -34,7 +34,7 @@ public class MajorityElementN2 {
 
     static int mooreVotingAlgo(int[] arr){
         int count = 0;
-        int element = 0;
+        int element = Integer.MIN_VALUE;
         for(int i : arr){
             if(count==0){
                 element = i;
