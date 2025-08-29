@@ -36,6 +36,7 @@ public class MajorityElementN2 {
         int count = 0;
         int element = Integer.MIN_VALUE;
         for(int i : arr){
+
             if(count==0){
                 element = i;
             }
