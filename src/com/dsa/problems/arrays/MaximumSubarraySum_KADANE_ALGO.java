@@ -24,7 +24,7 @@ public class MaximumSubarraySum_KADANE_ALGO {
         }
         return maxSum;
     }
-    //-2,1,-3,4i,-1,2,1,-5,4
+    //-2,1,-3,4,-1,2,1,-5,4
 
 /*
     Time Complexity: O(N), where N = size of the array.
@@ -34,19 +34,31 @@ public class MaximumSubarraySum_KADANE_ALGO {
 
  */
     public  static int kadaneAlgo(int[] arr,int n){
-        int i = 0;
         int maxSum = Integer.MIN_VALUE;
-        int sum = arr[0];
-        while(i<n){
-            if(sum<0){
-                sum=0;
-                //i++;//
+        int sum = 0;
+        int newStart = 0;
+        int start = -1;
+        int end = -1;
+        for(int i = 0; i<n; i++){
+            if(sum ==0){
+                newStart = i;
             }
-            sum+=arr[i];
-            maxSum = Math.max(maxSum,sum);
-            i++;
+            sum += arr[i];
+
+            if(sum > maxSum){
+                maxSum = sum;
+                start = newStart;
+                end = i;
+            }
+            if(sum<0){
+                sum = 0;
+            }
         }
+        System.out.print("The subarray is: [");
+        for (int i = start; i <= end; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.print("]");
         return maxSum;
-        //if()
     }
 }
