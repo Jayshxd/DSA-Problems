@@ -1,5 +1,7 @@
 package com.dsa.problems.arrays;
 
+import java.util.Arrays;
+
 public class MinimizeMaximumPairSuminArray {
 
     class Solution {
