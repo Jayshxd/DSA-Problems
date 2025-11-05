@@ -99,7 +99,7 @@ public class DoublyLL {
 
 
 
-    public void delhead(){
+    public void delHead(){
         if(head==null){
             System.out.println("List is empty");
             return;
@@ -140,7 +140,7 @@ public class DoublyLL {
             return;
         }
         if(pos==1){
-            delhead();
+            delHead();
             return;
         }
         if(pos==size){
@@ -178,7 +178,7 @@ public class DoublyLL {
         obj.atPos(200,4);
         obj.display();
         System.out.println("******************************");
-        obj.delhead();
+        obj.delHead();
         obj.display();
 
         obj.delete(2);
