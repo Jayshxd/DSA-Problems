@@ -97,6 +97,73 @@ public class DoublyLL {
         System.out.println();
     }
 
+
+
+    public void delhead(){
+        if(head==null){
+            System.out.println("List is empty");
+            return;
+        }
+        if(head.next==null){
+            head = null;
+            tail = null;
+        }
+        Node temp = head;
+        head = head.next;
+        head.prev = null;
+        temp.next = null;
+        size--;
+        System.out.println("delete done size is : "+size);
+        return;
+    }
+    public void delTail(){
+        if(tail==null){
+            System.out.println("List is empty");
+            return;
+        }
+        if(head.next==null){
+            head = null;
+            tail = null;
+        }
+        Node temp = tail;
+        tail = tail.prev;
+        tail.next = null;
+        temp.prev = null;
+        temp.next = null;
+        size--;
+        System.out.println("delete done size is : "+size);
+        return;
+    }
+    public void delete(int pos){
+        if(pos>size || pos<1){
+            System.out.println("Position out of bounds");
+            return;
+        }
+        if(pos==1){
+            delhead();
+            return;
+        }
+        if(pos==size){
+            delTail();
+            return;
+        }
+        Node temp = head;
+        int count = 1;
+        while(count<pos-1){
+            temp = temp.next;
+            count++;
+        }
+        Node toDelete = temp.next;
+        Node toJoin = toDelete.next;
+        temp.next = toJoin;
+        toJoin.prev = temp;
+        toDelete.next=null;
+        toDelete.prev=null;
+        size--;
+        System.out.println("delete done size is : "+size);
+        return;
+    }
+
     public static void main(String[] args) {
         DoublyLL obj = new DoublyLL();
         obj.atHead(100);
@@ -110,6 +177,13 @@ public class DoublyLL {
 
         obj.atPos(200,4);
         obj.display();
+        System.out.println("******************************");
+        obj.delhead();
+        obj.display();
+
+        obj.delete(2);
+        obj.display();
+
 
     }
 
