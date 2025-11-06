@@ -1,6 +1,6 @@
 package com.dsa.problems.linked_list;
 
-public class InsertOperation {
+public class SinglyLL {
     Node head;
     int size;
 
@@ -24,7 +24,7 @@ public class InsertOperation {
         }
     }
 
-    public InsertOperation() {
+    public SinglyLL() {
         this.head = null;
         this.size = 0;
     }
@@ -134,7 +134,7 @@ public class InsertOperation {
     // --- MAIN METHOD (Tumhara code) ---
 
     public static void main(String[] args) {
-        InsertOperation obj = new InsertOperation();
+        SinglyLL obj = new SinglyLL();
         obj.atHead(1);
         Node.display(obj.head); // 1 -> null
 
