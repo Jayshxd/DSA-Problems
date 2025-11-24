@@ -10,11 +10,12 @@ This repository contains my solutions to various Data Structures and Algorithms 
 - [x] Binary Search 
 - [ ] Strings (In Progress)
 - [ ] Recursion
-- [ ] Linked List
+- [x] Linked List
 
 ## ## Goals
 - To consistently solve problems and improve my logic.
 - To write clean, efficient, and well-documented code.
 
 - To master the core patterns required for technical interviews.
+
 
