@@ -12,11 +12,12 @@ This repository contains my solutions to various Data Structures and Algorithms 
 - [ ] Recursion
 - [x] Linked List
 
-## ## Goals
+#### Goals
 - To consistently solve problems and improve my logic.
 - To write clean, efficient, and well-documented code.
 
 - To master the core patterns required for technical interviews.
+
 
 
 
