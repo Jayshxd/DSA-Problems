@@ -8,7 +8,7 @@ This repository contains my solutions to various Data Structures and Algorithms 
 - [x] Arrays
 - [x] Basic Math
 - [x] Binary Search 
-- [ ] Strings (In Progress)
+- [x] Strings (In Progress)
 - [ ] Recursion
 - [x] Linked List
 
@@ -17,5 +17,6 @@ This repository contains my solutions to various Data Structures and Algorithms 
 - To write clean, efficient, and well-documented code.
 
 - To master the core patterns required for technical interviews.
+
 
 
